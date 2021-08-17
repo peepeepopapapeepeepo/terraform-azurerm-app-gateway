@@ -18,7 +18,7 @@ locals {
   ip_label = var.ip_label != "" ? var.ip_label : join("-", [local.default_name, "pubip"])
 
   frontend_ip_configuration_name      = var.frontend_ip_configuration_name != "" ? var.frontend_ip_configuration_name : join("-", [local.default_name, "frontipconfig"])
-  frontend_priv_ip_configuration_name = var.frontend_priv_ip_configuration_name != "" ? var.frontend_ip_configuration_name : join("-", [local.default_name, "frontipconfig-priv"])
+  frontend_priv_ip_configuration_name = var.frontend_priv_ip_configuration_name != "" ? var.frontend_priv_ip_configuration_name : join("-", [local.default_name, "frontipconfig-priv"])
 
   gateway_ip_configuration_name = var.gateway_ip_configuration_name != "" ? var.gateway_ip_configuration_name : join("-", [local.default_name, "gwipconfig"])
 
